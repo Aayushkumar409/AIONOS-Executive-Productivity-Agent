@@ -1,0 +1,10 @@
+AIONOS_Assignment1_Executive_Productivity_Agent/
+├── app.py
+├── data.json
+├── requirements.txt
+├── README.md
+├── DEMO_SCRIPT.md
+├── PPT/
+│   └── AIONOS_Assignment1_10_Slides.pptx
+└── docs/
+    └── architecture.txt
