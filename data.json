@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "assignment": "Assignment 1 \u2014 Executive Productivity Agent",
+    "week": "21\u201325 September 2026",
+    "primary_user": "Arjun Malhotra",
+    "role": "VP Sales",
+    "grounding_policy": "Use only material supplied in the Assignment 1 data pack."
+  },
+  "people": [
+    {
+      "name": "Arjun Malhotra",
+      "role": "VP Sales",
+      "email": "arjun.malhotra@veridian-corp.example",
+      "type": "user"
+    },
+    {
+      "name": "Neha Kapoor",
+      "role": "Marketing Lead",
+      "email": "neha.kapoor@veridian-corp.example",
+      "type": "internal"
+    },
+    {
+      "name": "Raghav Sethi",
+      "role": "Ops Manager",
+      "email": "raghav.sethi@veridian-corp.example",
+      "type": "internal"
+    },
+    {
+      "name": "Divya Rao",
+      "role": "Finance",
+      "email": "divya.rao@veridian-corp.example",
+      "type": "internal"
+    },
+    {
+      "name": "Priya Nair",
+      "role": "Meridian Logistics (external client)",
+      "email": "priya.nair@meridianlogistics.example",
+      "type": "external"
+    },
+    {
+      "name": "Facilities Internal",
+      "role": "Internal distribution",
+      "email": "facilities@veridian-corp.example",
+      "type": "distribution"
+    }
+  ],
+  "commitments": [
+    {
+      "id": "C1",
+      "canonical_action": "Send updated vendor list to Raghav",
+      "category": "my_action",
+      "owner": "Arjun Malhotra",
+      "deadline": "2026-09-23",
+      "deadline_text": "Wednesday morning",
+      "status": "pending",
+      "priority": "High",
+      "sources": [
+        "Leadership Sync",
+        "Vendor List email thread",
+        "Arjun voice note 1"
+      ],
+      "evidence": "Arjun said he would send the updated vendor list; later emails and his voice note show it remained pending."
+    },
+    {
+      "id": "C2",
+      "canonical_action": "Review Q3 campaign deck",
+      "category": "my_action",
+      "owner": "Arjun Malhotra",
+      "deadline": "2026-09-24 09:30",
+      "deadline_text": "Thursday 24 Sep, 9:30 AM",
+      "status": "ready",
+      "priority": "Medium",
+      "sources": [
+        "Leadership Sync",
+        "Q3 Campaign Deck email thread"
+      ],
+      "evidence": "Neha moved the review to Thursday morning and then confirmed 9:30 AM; the deck was ready Thursday at 8:00 AM."
+    },
+    {
+      "id": "C3",
+      "canonical_action": "Review July expense variance report",
+      "category": "my_action",
+      "owner": "Arjun Malhotra",
+      "deadline": "2026-09-24 09:00",
+      "deadline_text": "Before Thursday board prep",
+      "status": "received_needs_review",
+      "priority": "Medium",
+      "sources": [
+        "Leadership Sync",
+        "Expense Variance Report email thread",
+        "Arjun voice note 2"
+      ],
+      "evidence": "Divya sent the report Wednesday at 6:00 PM; Arjun said he wanted time to review it before Thursday board prep."
+    },
+    {
+      "id": "C4",
+      "canonical_action": "Attend Meridian Logistics client call",
+      "category": "my_action",
+      "owner": "Arjun Malhotra",
+      "deadline": "2026-09-23 15:00",
+      "deadline_text": "Wednesday 23 Sep, 3:00 PM",
+      "status": "confirmed",
+      "priority": "Medium",
+      "sources": [
+        "Leadership Sync",
+        "Call Reschedule email thread",
+        "Arjun voice note 2"
+      ],
+      "evidence": "Priya confirmed Wednesday at 3:00 PM and Arjun confirmed the time."
+    },
+    {
+      "id": "C5",
+      "canonical_action": "Resolve ownership / authorized sign-off for Mumbai office lease renewal",
+      "category": "unclear_ownership",
+      "owner": "Unassigned",
+      "deadline": "2026-09-25 17:00",
+      "deadline_text": "Friday 25 Sep, end of day",
+      "status": "unowned",
+      "priority": "Critical",
+      "sources": [
+        "Leadership Sync",
+        "Mumbai Office Lease Renewal email thread",
+        "Arjun voice note 1"
+      ],
+      "evidence": "Arjun said not to assume ownership; Divya believed Facilities handled it, but later messages still described the item as unowned."
+    },
+    {
+      "id": "W1",
+      "canonical_action": "Provide Q3 campaign deck for Arjun's review",
+      "category": "waiting_on_others",
+      "owner": "Neha Kapoor",
+      "deadline": "2026-09-24 09:30",
+      "deadline_text": "Thursday 24 Sep, 9:30 AM",
+      "status": "completed_by_source",
+      "priority": "Medium",
+      "sources": [
+        "Q3 Campaign Deck email thread"
+      ],
+      "evidence": "Neha sent the deck Thursday at 8:00 AM ahead of the 9:30 AM review."
+    },
+    {
+      "id": "W2",
+      "canonical_action": "Provide July expense variance report",
+      "category": "waiting_on_others",
+      "owner": "Divya Rao",
+      "deadline": "2026-09-23 18:00",
+      "deadline_text": "Wednesday evening",
+      "status": "completed_by_source",
+      "priority": "Medium",
+      "sources": [
+        "Expense Variance Report email thread"
+      ],
+      "evidence": "Divya attached and sent the report Wednesday at 6:00 PM as promised."
+    },
+    {
+      "id": "W3",
+      "canonical_action": "Confirm Meridian Logistics call time",
+      "category": "waiting_on_others",
+      "owner": "Priya Nair",
+      "deadline": "2026-09-23 15:00",
+      "deadline_text": "Wednesday 23 Sep, 3:00 PM",
+      "status": "confirmed",
+      "priority": "Medium",
+      "sources": [
+        "Call Reschedule email thread"
+      ],
+      "evidence": "Priya confirmed that Wednesday at 3:00 PM worked."
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2026-09-21",
+      "day": "Mon",
+      "time": "9:00\u20139:35 AM",
+      "event": "Leadership Sync"
+    },
+    {
+      "date": "2026-09-21",
+      "day": "Mon",
+      "time": "2:00\u20132:30 PM",
+      "event": "1:1 with Neha"
+    },
+    {
+      "date": "2026-09-21",
+      "day": "Mon",
+      "time": "4:00\u20135:00 PM",
+      "event": "Blocked"
+    },
+    {
+      "date": "2026-09-22",
+      "day": "Tue",
+      "time": "11:00 AM\u201312:00 PM",
+      "event": "Internal Budget Review"
+    },
+    {
+      "date": "2026-09-22",
+      "day": "Tue",
+      "time": "3:00\u20133:30 PM",
+      "event": "Blocked"
+    },
+    {
+      "date": "2026-09-23",
+      "day": "Wed",
+      "time": "3:00\u20133:30 PM",
+      "event": "Call \u2014 Meridian Logistics"
+    },
+    {
+      "date": "2026-09-23",
+      "day": "Wed",
+      "time": "6:00\u20136:15 PM",
+      "event": "Blocked"
+    },
+    {
+      "date": "2026-09-24",
+      "day": "Thu",
+      "time": "9:00\u201310:00 AM",
+      "event": "Board Prep Session"
+    },
+    {
+      "date": "2026-09-24",
+      "day": "Thu",
+      "time": "4:00\u20135:00 PM",
+      "event": "Hiring Panel \u2014 Sales Associate"
+    },
+    {
+      "date": "2026-09-25",
+      "day": "Fri",
+      "time": "10:00\u201310:30 AM",
+      "event": "Facilities Check-in"
+    },
+    {
+      "date": "2026-09-25",
+      "day": "Fri",
+      "time": "1:00\u20132:00 PM",
+      "event": "Blocked"
+    }
+  ],
+  "sources": [
+    "Leadership Sync transcript \u2014 Monday 21 September 2026, 9:00\u20139:35 AM",
+    "Calendars \u2014 week of 21\u201325 September 2026",
+    "Email Thread 1 \u2014 Vendor List",
+    "Email Thread 2 \u2014 Q3 Campaign Deck",
+    "Email Thread 3 \u2014 Call Reschedule",
+    "Email Thread 4 \u2014 Expense Variance Report",
+    "Email Thread 5 \u2014 Mumbai Office Lease Renewal",
+    "Voice Note 1 \u2014 Monday 21 September 2026, 6:40 PM",
+    "Voice Note 2 \u2014 Wednesday 23 September 2026, 8:15 AM"
+  ]
+}
